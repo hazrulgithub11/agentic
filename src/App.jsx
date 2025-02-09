@@ -1,17 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import ScanProduct from './pages/ScanProduct';
-import CheckItem from './pages/CheckItem';
-import MintItem from './pages/MintItem';
+import Model3D from './pages/Model3D';
+import AdminPanel from './pages/AdminPanel';
+import ScanNFC from './pages/ScanNFC';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/scan" element={<ScanProduct />} />
-        <Route path="/check" element={<CheckItem />} />
-        <Route path="/mint" element={<MintItem />} />
+        <Route path="/scan" element={<ScanNFC />} />
+        <Route path="/model" element={<Model3D />} />
+        <Route path="/admin" element={<AdminPanel />} />
       </Routes>
     </BrowserRouter>
   )
